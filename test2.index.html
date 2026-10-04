@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>桃園記憶：眷村文化巡禮</title>
+<style>
+:root{--bg:#fff;--ink:#1a1a1a;--mut:#777;--ln:#e6e1da;--r:#a63d2f;--soft:#f7f4ef;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#fff;--ink:#1a1a1a}}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Serif TC","Songti TC",serif}
+#app{max-width:520px;margin:0 auto;padding:44px 18px 96px}
+h1,h2,h3{margin:.4em 0;font-weight:600;letter-spacing:.08em}.en{font-size:.68rem;letter-spacing:.3em;color:var(--r);text-transform:uppercase}
+.hero{padding:40px 0 24px;border-bottom:1px solid var(--ink)}.hero h1{font-size:min(1.9rem,5.6vw);line-height:1.35;white-space:nowrap}.hero p{color:var(--mut);font-size:.95rem}
+.card{border-top:1px solid var(--ink);padding:14px 0;margin:6px 0}
+.btn{display:block;width:100%;min-height:48px;margin:8px 0;padding:10px;border:1px solid var(--ink);background:var(--ink);color:#fff;font:inherit;letter-spacing:.15em;cursor:pointer}
+.btn.o{background:#fff;color:var(--ink)}.btn.r{background:var(--r);border-color:var(--r)}.btn:disabled{opacity:.35}
+.bar{height:3px;background:var(--ln)}.bar i{display:block;height:100%;background:var(--r);transition:width .6s}small{color:var(--mut)}
+.pg{animation:in .4s ease}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+.ph{background:var(--soft);min-height:120px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:.8rem;color:var(--mut);padding:8px;letter-spacing:.1em}
+.cap{display:block;font-size:.72rem;margin:4px 0 12px;color:var(--mut)}img{max-width:100%}
+nav{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--ink);display:flex;padding-bottom:env(safe-area-inset-bottom,0px);z-index:9}
+nav button{flex:1;border:0;background:none;color:var(--mut);padding:13px 0;font:inherit;font-size:.9rem;letter-spacing:.15em}nav button.on{color:var(--r);font-weight:700}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;padding:13px;font:inherit;background:#fff;border:1px solid var(--ln);color:var(--ink)}.opt.s{border-color:var(--ink);background:var(--soft)}
+.stamp{width:104px;height:104px;border-radius:50%;border:2px solid #ccc;color:#ccc;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;margin:12px auto;transform:rotate(-8deg);letter-spacing:.1em;font-size:.9rem}
+.stamp.on{border:3px double var(--r);color:var(--r);animation:pop .7s}@keyframes pop{0%{transform:scale(2.5) rotate(-40deg);opacity:0}100%{transform:scale(1) rotate(-8deg);opacity:1}}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}table{width:100%;border-collapse:collapse;font-size:.8rem}td,th{border-bottom:1px solid var(--ln);padding:7px 4px;vertical-align:top;text-align:left}th{border-bottom:1px solid var(--ink)}
+.pin{position:absolute;background:var(--ink);color:#fff;border:0;padding:7px 11px;font:inherit;font-size:.8rem;letter-spacing:.1em}
+.ok{border-left:3px solid var(--r);background:var(--soft);padding:12px;animation:pop .6s;margin:10px 0}.bad{border-left:3px solid var(--ink);background:var(--soft);padding:12px;margin:10px 0}
+.splash{min-height:90vh;display:flex;flex-direction:column;justify-content:center;text-align:center;animation:in .6s}.splash h1{font-size:2.4rem;letter-spacing:.2em;margin:.2em 0}.splash h2{font-weight:400;letter-spacing:.3em;font-size:1.1rem}.splash .bar{margin:28px 0 8px}.splash .btn{margin-top:40px;animation:in 1s}.stampm{width:84px;height:84px;margin:0 auto 24px;border:3px double var(--r);border-radius:50%;color:var(--r);display:flex;align-items:center;justify-content:center;transform:rotate(-8deg);font-size:.8rem;letter-spacing:.15em;font-weight:700}
+button,.btn,.opt{transition:transform .18s ease,box-shadow .18s ease;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.btn:hover,.opt:hover,.pin:hover,nav button:hover{transform:translateY(-4px);box-shadow:0 8px 16px rgba(0,0,0,.18)}
+.btn:active,.opt:active,.pin:active,nav button:active{transform:translateY(-1px) scale(.97);box-shadow:0 3px 6px rgba(0,0,0,.2)}
+.btn:disabled:hover{transform:none;box-shadow:none}
+.fl{position:fixed;pointer-events:none;z-index:99;color:var(--r);font-size:1.1rem;animation:fl .9s ease-out forwards}
+@keyframes fl{to{transform:translateY(-60px) scale(1.6);opacity:0}}
+.ov{position:fixed;inset:0;background:#fff;z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:in .2s}.ov .bar{width:60%;margin-top:10px}
+.tl{display:flex;overflow-x:auto;border-top:2px solid var(--ink);margin:14px 0;padding-bottom:8px;scroll-snap-type:x mandatory}.tli{flex:0 0 150px;position:relative;padding:18px 12px 0 0;scroll-snap-align:start}.tli:before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--r)}
+.in{display:block;width:100%;margin-top:8px;padding:12px;border:1px solid var(--ink);font:inherit;font-size:1rem;background:#fff;color:var(--ink);border-radius:0}
+.dist{transition:transform .2s ease,filter .2s ease}.dist.on{cursor:pointer}.dist.on:hover,.dist.sel{transform:translateY(-6px);filter:drop-shadow(0 8px 4px rgba(0,0,0,.28))}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}@media(max-width:700px){.two{grid-template-columns:1fr}}
+.coin{position:fixed;pointer-events:none;z-index:300;font-size:1.4rem;animation:coin 1.6s ease-out forwards}@keyframes coin{0%{transform:translate(0,0) scale(.6);opacity:1}35%{transform:translate(calc(var(--dx)*.6),var(--up)) scale(1.1);opacity:1}100%{transform:translate(var(--dx),var(--fall)) rotate(540deg);opacity:0}}
+nav button:disabled{opacity:.3}nav button:disabled:hover{transform:none;box-shadow:none}.rp{position:fixed;top:0;left:0;right:0;z-index:50;background:#fff;padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--ln)}.rp .bar{height:6px}.rp small{display:block;text-align:right;padding:2px 12px;font-size:.7rem;text-align:left}
+.out{position:fixed;top:calc(env(safe-area-inset-top,0px) + 6px);right:12px;z-index:60;border:1px solid var(--ink);background:#fff;color:var(--ink);font:inherit;font-size:.8rem;letter-spacing:.15em;padding:5px 12px}
+</style></head><body><div id="app"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script>
+const {useState,useEffect}=React,h=React.createElement;
+const GMAP_EMBED=""; // 貼上 Google My Maps 的 iframe 網址（src）
+const mk=(id,n,loc,t,f,sec)=>({id,n,loc,t,f,sec,ph:["現代園區照片","歷史照片","歷史地圖"].map(k=>({k,src:"",cap:"（請填寫圖說）",from:"（請填寫來源）",yr:"（請填寫年代）"}))});
+const P=[
+mk("matsu","馬祖新村","桃園市中壢區","眷村生活與空間記憶",{build:"1957年",mil:"為紀念陸軍第八十四師接防馬祖列島而命名，安置該師軍官眷屬",life:"將、校官雲集，有「桃園將軍村」美稱",reuse:"登錄為歷史建築，成立「馬祖新村眷村文創園區」"},
+{"歷史介紹":"馬祖新村建立於1957年，是為了紀念1955年3月24日陸軍第八十四師接防馬祖列島而命名。村名並非因居民來自馬祖而得名。當年軍眷無家可住、寄住寺廟與茅舍，經宋美齡視察馬祖時獲知後撥款協助，加上馬祖守備區指揮部籌款，購地興建眷舍。大門「馬祖新村」由宋美齡親自題字。第一批眷舍於1957年完工，分配給第八十四師少將級以下軍官及眷屬居住。","生活文化":"馬祖新村空間配置分為甲、乙、丙級，分配給將、校、尉級軍官，因將、校官雲集而有「桃園將軍村」、「星星滿天飛」的美稱。村內設有馬祖幼稚園、公園、福利社、菜市場等公共設施。眷村建築參考美式花園建築，以放射狀排列。","文化保存":"2003年桃園縣政府古蹟暨歷史建築審議委員會會勘，認定馬祖新村空間結構完整、具冷戰年代景觀的歷史價值，並於2004年3月3日公告登錄為歷史建築。2005年土地由桃園縣政府代管；2012年獲國防部選定為全臺13處眷村文化保存園區之一。今日以「類博物館」的方式重新起步，成立「馬祖新村眷村文創園區」，從保存、活化到文創影視推廣，延續眷村記憶。"}),
+mk("taiwu","太武新村","桃園市大溪區","戰爭記憶與眷村建築",{build:"1964年",mil:"與八二三砲戰及金門軍人眷屬相關",life:"軍人家庭的日常",reuse:"藝術再利用"},
+{"歷史介紹":"太武新村位於桃園大溪，於1964年興建，與八二三砲戰及金門軍人眷屬有關。村名連結金門的太武山，保留了戰地記憶。","生活文化":"在軍旅與家庭並行的生活中，居民以簡樸的空間互相扶持。今日園區結合藝術創作與展覽，讓戰爭記憶與當代文化對話。"}),
+mk("xianguang","憲光二村","桃園市龜山區","憲兵眷村與建築變遷",{build:"戰後眷村興建時期",mil:"憲兵眷村",life:"平房與公寓並存的居住空間",reuse:"文化保存與再利用"},
+{"歷史介紹":"憲光二村位於桃園龜山，是憲兵單位的眷村。園區同時留有平房與公寓式眷舍，呈現眷村居住空間的演變。","生活文化":"從平房到公寓，居民的生活空間、鄰里往來方式也隨之改變。今日園區進行文化保存與再利用，成為認識眷村變遷的場域。"}),
+mk("zhongzhen","忠貞新村","桃園市平鎮區","異鄉人的家與飲食文化",{build:"1960年代前後",mil:"與來自滇緬邊境的孤軍及其眷屬安置有關",life:"融合雲南家鄉風味與在地生活",reuse:"文化保存與眷村飲食文化推廣"},
+{"歷史介紹":"忠貞新村位於桃園平鎮，居民多與來自滇緬邊境的孤軍及其眷屬有關。他們遠離家鄉，在臺灣重新建立生活。","生活文化":"居民帶來雲南家鄉的飲食與生活習慣，使忠貞新村發展出獨特的眷村飲食文化，也成為認識遷徙與落地生根的重要場域。"})];
+const Q=(n,d,bg,q,o,a,e,hint)=>({n,d,bg,q,o,a,e,hint});
+const T={matsu:[
+Q("歷史小偵探","認識馬祖新村的建立年代","","馬祖新村建立於哪一年？",["1957年","1964年","2004年"],0,"馬祖新村建立於1957年，第一批眷舍同年完工。","題目與「民國46年」有關。"),
+Q("村名由來","認識馬祖新村的命名","","馬祖新村的村名是為了紀念什麼而命名？",["陸軍第八十四師接防馬祖列島","居民大多來自馬祖","馬祖當地的一座寺廟"],0,"為紀念1955年陸軍第八十四師接防馬祖列島而命名，並非因居民來自馬祖。","想想村名與哪支部隊有關。"),
+Q("生活記憶","認識馬祖新村的美稱","","馬祖新村為什麼被稱為「桃園將軍村」？",["將、校級軍官雲集","園區有許多將軍雕像","居民都來自馬祖"],0,"眷舍分配給將、校、尉級軍官，因將、校官雲集而得名。","想想「將軍村」裡住了哪些人。"),
+{photo:1,n:"在地打卡：眷村巷弄",d:"到現場拍照，留下你的眷村身影。",bg:"在園區找一處你覺得最有眷村味的角落（巷弄、院落或牆面），拍下它。",e:"你的在地觀察就是最好的紀錄！"}],
+taiwu:[
+Q("戰地歷史","認識太武新村的興建年代","太武新村位於桃園大溪，於1964年興建，與八二三砲戰及金門軍人眷屬有關。","太武新村於哪一年興建？",["1949年","1964年","1987年"],1,"太武新村於1964年興建。","題目背景中提到的年份。"),
+Q("村名探索","認識太武新村的村名","太武新村的村名連結金門的太武山，保留了戰地記憶。","太武新村的村名連結金門的哪座山？",["太武山","玉山","陽明山"],0,"村名連結金門的太武山，保留了戰地記憶。","看看村名裡的字。"),
+Q("和平思考","思考戰爭記憶與當代文化","今日太武新村結合藝術創作與展覽，讓戰爭記憶與當代文化對話。","今日太武新村如何讓戰爭記憶與當代文化對話？",["結合藝術創作與展覽","改建成停車場","完全拆除"],0,"透過藝術創作與展覽，讓人們重新認識戰地記憶，珍惜和平。","介紹最後一句提到的方式。"),
+{photo:1,n:"在地打卡：戰地記憶",d:"到現場拍照，留下你的眷村身影。",bg:"在園區找一處最能代表眷村與戰地記憶的場景，拍下它。",e:"你的在地觀察就是最好的紀錄！"}],
+xianguang:[
+Q("軍種辨識","認識憲光二村的身分","憲光二村位於桃園龜山，是憲兵單位的眷村。","憲光二村是哪個單位的眷村？",["憲兵","海軍","空軍"],0,"憲光二村是憲兵單位的眷村，村名的「憲」即指憲兵。","村名中的「憲」字。"),
+Q("空間比較","認識園區的兩種眷舍","園區同時留有平房與公寓式眷舍，呈現居住空間的演變。","憲光二村園區同時留有哪兩種眷舍？",["平房與公寓式眷舍","帳篷與木船","別墅與高樓"],0,"平房與公寓式眷舍並存，呈現眷村居住空間的演變。","介紹提到的兩種房子。"),
+Q("時代變遷","思考住宅變化與生活","從平房到公寓，居民的生活空間與鄰里往來方式也隨之改變。","從平房到公寓，介紹中提到什麼隨之改變？",["生活空間與鄰里往來方式","村名","所在行政區"],0,"空間改變，生活與鄰里往來的方式也跟著改變。","想想住在平房和公寓的差別。"),
+{photo:1,n:"在地打卡：眷舍樣貌",d:"到現場拍照，留下你的眷村身影。",bg:"拍下一棟平房或公寓式眷舍，並留意它與另一種眷舍的差異。",e:"你的在地觀察就是最好的紀錄！"}],
+zhongzhen:[
+Q("歷史小偵探","認識忠貞新村的居民來源","忠貞新村位於桃園平鎮，居民多與來自滇緬邊境的孤軍及其眷屬有關。","忠貞新村的居民與哪個地區關係密切？",["滇緬邊境","澎湖離島","蘭嶼"],0,"居民多與滇緬邊境的孤軍及眷屬有關，他們在臺灣重新建立生活。","想想「滇緬」指的地方。"),
+Q("飲食觀察家","認識忠貞新村的飲食文化","居民帶來雲南家鄉的飲食與生活習慣，形成獨特的眷村飲食文化。","居民帶來哪裡的家鄉飲食？",["雲南","北海道","巴黎"],0,"居民把雲南家鄉的飲食帶進日常，形成獨特的眷村飲食文化。","介紹提到的家鄉。"),
+Q("生活記憶","思考遷徙與落地生根","忠貞新村也是認識遷徙與落地生根的重要場域。","忠貞新村是認識什麼的重要場域？",["遷徙與落地生根","海軍訓練","太空科技"],0,"居民遠離家鄉，在這裡重建生活，是理解遷徙與落地生根的好例子。","想想居民從哪裡來、如何安頓。"),
+{photo:1,n:"在地打卡：異鄉記憶",d:"到現場拍照，留下你的眷村身影。",bg:"在園區找一處最能代表遷徙與在地生活交會的角落，拍下它。",e:"你的在地觀察就是最好的紀錄！"}]};
+const TR={matsu:["大眾運輸：搭乘台鐵至中壢車站，再轉乘公車或計程車前往。","自行前往：以 Google 地圖搜尋「馬祖新村」導航。"],taiwu:["大眾運輸：大溪沒有火車站，可由桃園或中壢車站轉乘客運、公車前往大溪，再接駁至園區。","自行前往：以 Google 地圖搜尋「太武新村」導航。"],xianguang:["大眾運輸：可搭乘機場捷運或台鐵至桃園、龜山一帶，再轉乘公車或計程車前往。","自行前往：以 Google 地圖搜尋「憲光二村」導航。"],zhongzhen:["大眾運輸：搭乘台鐵至中壢車站，再轉乘公車或計程車前往（平鎮龍岡一帶）。","自行前往：以 Google 地圖搜尋「忠貞新村」導航。"]};
+const DIST=[["觀音",0,0,60],["大園",64,0,60],["蘆竹",128,0,60],["龜山",192,0,60,"xianguang"],["新屋",0,74,60],["中壢",64,74,60,"matsu"],["桃園",128,74,60],["八德",192,74,60],["大溪",256,74,60,"taiwu"],["楊梅",0,148,60],["平鎮",64,148,60,"zhongzhen"],["龍潭",128,148,60],["復興",192,148,124]];
+const TL=[["1949","國民政府遷臺，大批軍人與眷屬隨之來臺"],["1950s-1960s","各地陸續興建眷村，安置軍眷"],["1996","國軍老舊眷村改建條例公布，眷村面臨改建"],["近年","桃園眷村轉型為文化園區，保存眷村記憶"]];
+const KEY="tri-done",load=()=>{try{return JSON.parse(localStorage.getItem(KEY))||[]}catch(e){return[]}};
+const Photo=({p})=>h("div",null,p.src?h("img",{src:p.src,alt:p.cap}):h("div",{className:"ph"},"示意圖片｜"+p.k),h("small",{className:"cap"},p.cap+"｜"+p.from+"｜"+p.yr));
+function Snap({pl,i,done,mark,back,ph,savePh}){const q=T[pl.id][i],key=pl.id+i,fin=done.includes(key),[er,setE]=useState("");
+ const pick=e=>{const f=e.target.files[0];if(!f)return;const im=new Image();im.onload=()=>{const c=document.createElement("canvas");c.width=320;c.height=im.height*320/im.width;c.getContext("2d").drawImage(im,0,0,c.width,c.height);savePh(key,c.toDataURL("image/jpeg",.6));URL.revokeObjectURL(im.src)};im.onerror=()=>setE("無法讀取照片，請重試");im.src=URL.createObjectURL(f)};
+ return h("div",{className:"pg"},h("button",{className:"btn o",onClick:back},"← 返回"),h("div",{className:"en"},pl.n+" · Check-in"),h("h2",null,q.n),h("p",null,q.d),
+ h("div",{className:"card"},h("b",null,"打卡提示"),h("p",null,q.bg)),ph[key]&&h("img",{src:ph[key],style:{width:"100%"}}),
+ h("label",{className:"btn r",style:{textAlign:"center"}},ph[key]?"重新拍照":"📷 拍照打卡",h("input",{type:"file",accept:"image/*",capture:"environment",hidden:true,onChange:pick})),
+ er&&h("div",{className:"bad"},er),h("small",null,"照片僅縮圖保存在你的手機瀏覽器，不會上傳。"),fin&&h("div",{className:"ok"},"✔ 打卡成功！"+q.e));}
+function Quiz({pl,i,done,mark,back,nextFn}){const q=T[pl.id][i],key=pl.id+i,[s,setS]=useState(null),[r,setR]=useState(null),fin=done.includes(key);
+ return h("div",{className:"pg"},h("button",{className:"btn o",onClick:back},"← 返回"),h("div",{className:"en"},pl.n+" · Mission"),h("h2",null,q.n),h("p",null,q.d),
+ h("h3",null,q.q),
+ q.o.map((o,k)=>h("button",{key:k,className:"opt"+(s===k?" s":""),onClick:()=>{setS(k);setR(null)}},o)),
+ h("button",{className:"btn",disabled:s===null,onClick:()=>setR(s===q.a)},"確認答案"),
+ r===false&&h("div",{className:"bad"},"再想一想。提示："+q.hint),
+ (r||fin)&&h("div",{className:"ok"},"✔ 正確！"+q.e,h("button",{className:"btn r",disabled:fin,onClick:()=>mark(key)},fin?"已完成任務":"完成任務"),i<3&&h("button",{className:"btn",onClick:()=>{mark(key);nextFn()}},"下一題 →")));}
+function App(){
+ const url=new URLSearchParams(location.search).get("place"),init=P.find(p=>p.id===url);
+ const [ph,setPh]=useState(()=>{try{return JSON.parse(localStorage.getItem("tri-ph"))||{}}catch(e){return{}}});
+ useEffect(()=>{try{localStorage.setItem("tri-ph",JSON.stringify(ph))}catch(e){}},[ph]);
+ const [name,setName]=useState(""),[user,setUser]=useState(()=>{try{return localStorage.getItem("tri-user")||""}catch(e){return""}});
+ useEffect(()=>{try{localStorage.setItem("tri-user",user)}catch(e){}},[user]);
+ const [rp,setRp]=useState(0),[hd,setHd]=useState(null),[sp,setSp]=useState(0);
+ const coin=(e,k)=>{const r=e.currentTarget.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2,n=Math.min(6+k*4,80);for(let i=0;i<n;i++){const c=document.createElement("span");c.className="coin";c.textContent="🪙";c.style.left=x+"px";c.style.top=y+"px";c.style.setProperty("--dx",(Math.random()*2-1)*(120+k*6)+"px");c.style.setProperty("--up",-(80+Math.random()*160)+"px");c.style.setProperty("--fall",(200+Math.random()*250)+"px");c.style.animationDelay=Math.random()*.25+"s";document.body.appendChild(c);setTimeout(()=>c.remove(),1900)}};
+ const [st,setSt]=useState("load"),[lp,setLp]=useState(0);
+ useEffect(()=>{if(st!=="load")return;const t=setInterval(()=>setLp(p=>Math.min(100,p+3)),70);return()=>clearInterval(t)},[st]);
+ useEffect(()=>{if(lp>=100&&st==="load"){const t=setTimeout(()=>setSt("cover"),400);return()=>clearTimeout(t)}},[lp,st]);
+ const [pg,setPg]=useState(init?"place":(user?"hist":"home")),[pid,setPid]=useState(init?init.id:"matsu"),[ti,setTi]=useState(null),[done,setDone]=useState(load);
+ useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}},[done]);
+ const [tp,setTp]=useState(null);
+ const nav=fn=>{if(tp!==null)return;setTp(0);let q=0;const t=setInterval(()=>{q+=20;setTp(q);if(q>=100){clearInterval(t);fn();scrollTo(0,0);setTimeout(()=>setTp(null),150)}},90)};
+ const Ov=tp===null?null:h("div",{className:"ov"},h("div",{className:"en"},"Loading"),h("div",{className:"bar"},h("i",{style:{width:tp+"%"}})),h("small",{style:{marginTop:8}},"畫面切換中…"));
+ const go=(p,id)=>{if(!user&&p!=="home")return;if(user&&p==="home")p="hist";nav(()=>{setPg(p);if(id)setPid(id);setTi(null)})};
+ useEffect(()=>{if(pg!=="detail"||ti!==null){setRp(0);return}const f=()=>{const e=document.documentElement,m=e.scrollHeight-innerHeight;setRp(m>0?Math.min(100,Math.max(0,scrollY/m*100)):100)};f();addEventListener("scroll",f,{passive:true});addEventListener("resize",f);return()=>{removeEventListener("scroll",f);removeEventListener("resize",f)}},[pg,pid,ti,tp]);
+ const cnt=p=>[0,1,2,3].filter(i=>done.includes(p.id+i)).length,pct=Math.round(done.length/16*100),pl=P.find(p=>p.id===pid),mark=k=>setDone(d=>d.includes(k)?d:[...d,k]),savePh=(k,u)=>{setPh(o=>({...o,[k]:u}));mark(k)};
+ const Prog=()=>h("div",null,h("div",{className:"bar"},h("i",{style:{width:pct+"%"}})),h("small",null,"任務 "+done.length+"/16｜紀念章 "+P.filter(p=>cnt(p)===4).length+"/4｜探索進度 "+pct+"%"));
+ const Card=p=>h("div",{className:"card",key:p.id},h("div",{className:"en"},p.id),h("h3",null,p.n),h("small",null,p.loc+"｜"+p.t),h("div",{className:"ph",style:{margin:"8px 0",minHeight:70}},"示意圖片｜"+p.n),h("small",null,"任務 "+cnt(p)+"/4"),h("button",{className:"btn o",onClick:()=>go("place",p.id)},"進入"+p.n));
+ if(st==="load")return h("div",{id:"app"},h("div",{className:"splash"},h("div",{className:"en"},"Loading"),h("h2",null,"時光載入中"),h("div",{className:"bar"},h("i",{style:{width:lp+"%"}})),h("small",null,lp+"%")));
+ if(st==="cover")return h("div",{id:"app"},h("div",{className:"splash"},h("div",{className:"en"},"Taoyuan Memories"),h("h1",null,"桃園記憶"),h("h2",null,"眷村文化巡禮"),h("p",{style:{color:"var(--mut)",marginTop:24}},"馬祖新村・太武新村・憲光二村・忠貞新村"),h("button",{className:"btn r",onClick:()=>nav(()=>setSt(""))},"點選進入")),Ov);
+ let v;
+ if(ti!==null)v=h(T[pid][ti].photo?Snap:Quiz,{key:pid+ti,pl,i:ti,done,mark,ph,savePh,nextFn:()=>nav(()=>setTi(ti+1)),back:()=>nav(()=>setTi(null))});
+ else if(pg==="home")v=h("div",{className:"pg"},h("div",{className:"hero"},h("div",{className:"en"},"Taoyuan Memories"),h("h1",null,"走進眷村時光，收藏桃園記憶。"),h("p",null,"探索歷史，完成任務，收集四大眷村紀念章。")),
+  h("div",{className:"card"},h("b",null,"輸入姓名"),h("input",{type:"text",className:"in",placeholder:"請輸入你的姓名",maxLength:12,value:name,onChange:e=>setName(e.target.value)}),null),h("button",{className:"btn r",disabled:!name.trim(),onClick:()=>nav(()=>{setUser(name.trim());setPg("hist")})},"提交姓名，開始探索"),!name.trim()&&h("small",{style:{display:"block",textAlign:"center"}},"請先輸入姓名並提交才能開始"));
+ else if(pg==="map")v=h("div",{className:"pg"},h("div",{className:"en"},"Map"),h("h2",null,"桃園行政區地圖"),h("div",null,
+  h("div",{style:{marginBottom:18}},
+   h("svg",{viewBox:"0 -10 316 232",style:{width:"100%",overflow:"visible"}},DIST.map(d=>{const [n,x,y,w,vid]=d,on=!!vid,sel=hd===n;return h("g",{key:n,className:"dist"+(on?" on":"")+(sel?" sel":""),onMouseEnter:()=>on&&setHd(n),onClick:()=>on&&setHd(n)},h("rect",{x,y,width:w,height:70,fill:sel?"#1a1a1a":on?"#a63d2f":"#f1ede6",stroke:"#fff",strokeWidth:3}),h("text",{x:x+w/2,y:y+40,textAnchor:"middle",fontSize:13,fill:on?"#fff":"#999",style:{pointerEvents:"none"}},n+"區"))})),
+   h("small",null,"示意圖，非精確行政區界。")),
+  (()=>{const d=DIST.find(d=>d[0]===hd),vp=d&&P.find(p=>p.id===d[4]);return h("div",{className:"card",style:{minHeight:200,marginTop:0}},vp?h("div",{className:"pg",key:hd},h("div",{className:"en"},hd+"區"),h("h3",null,vp.n),h("small",null,vp.loc+"｜"+vp.t),h("p",null,h("b",null,"交通方式")),h("ul",null,TR[vp.id].map((x,i)=>h("li",{key:i,style:{fontSize:".9rem"}},x))),
+   h("a",{className:"btn o",style:{textAlign:"center",textDecoration:"none",lineHeight:"28px"},href:"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(vp.n+" "+vp.loc),target:"_blank",rel:"noopener"},"用 Google 地圖查詢路線"),h("small",null,"交通方式僅供參考，出發前請確認最新路線、班次與園區開放時間。")):h("small",null,"將游標移到紅色區域（手機請輕觸），查看該區眷村的交通方式。"))})()));
+ else if(pg==="hist")v=h("div",{className:"pg"},h("div",{className:"en"},"History"),h("h2",null,"歷史導覽"),h("p",null,"桃園的馬祖新村、太武新村、憲光二村與忠貞新村，各自保存了不同面向的眷村記憶。"),h("h3",null,"時間軸"),
+  h("div",{className:"tl"},TL.map((x,i)=>h("div",{key:i,className:"tli"},h("b",{style:{color:"var(--r)"}},x[0]),h("p",{style:{fontSize:".85rem",margin:"6px 0"}},x[1])))),
+  h("h3",null,"四村詳細介紹"),P.map(p=>h("div",{className:"card",key:p.id},h("div",{className:"en"},p.id),h("h3",null,p.n),h("small",null,p.loc),h("button",{className:"btn o",onClick:()=>go("detail",p.id)},"點我探索"))));
+ else if(pg==="credits")v=h("div",{className:"pg"},h("div",{className:"en"},"Credits"),h("h2",null,"創作者介紹"),h("div",{className:"card"},h("p",null,h("b",null,"網頁設計："),"林冠里"),h("p",null,h("b",null,"現職："),"國立中央大學歷史研究所碩士在職學分班"),h("p",null,h("b",null,"資歷："),"桃園國中教師、翰林出版社合作編輯"),h("p",null,h("b",null,"資料來源："),"桃園觀光局、國家文化記憶庫")),h("button",{className:"btn r",onClick:e=>{const k=sp+1;setSp(k);coin(e,k)}},"🪙 我要贊助"),sp>0&&h("small",{style:{display:"block",textAlign:"center"}},"已點擊 "+sp+" 次，謝謝你的支持！"));
+ else if(pg==="detail")v=h("div",{className:"pg",style:{paddingTop:30}},h("button",{className:"btn o",onClick:()=>go("hist")},"← 返回歷史導覽"),h("div",{className:"en"},pl.id),h("h1",null,pl.n),h("small",null,pl.loc+"｜"+pl.t),Object.entries(pl.sec).map(([k,t])=>h("div",{className:"card",key:k},h("h3",null,k),h("p",null,t))),h("b",null,"重點整理"),h("ul",null,[["興建年代","build"],["軍事背景","mil"],["居民生活","life"],["保存再利用","reuse"]].map(([l,k])=>h("li",{key:k},l+"："+pl.f[k]))),h("button",{className:"btn r",onClick:()=>go("place",pl.id)},"點我看"+pl.n+"照片集"));
+ else if(pg==="place"){const nx=[0,1,2,3].find(i=>!done.includes(pl.id+i));
+  v=h("div",{className:"pg"},h("button",{className:"btn o",onClick:()=>go("detail",pl.id)},"← 回到上一頁"),h("div",{className:"en"},pl.id),h("h1",null,pl.n+"照片集"),pl.ph.map((p,i)=>h(Photo,{key:i,p})),
+  h("button",{className:"btn r",onClick:()=>nav(()=>setTi(nx===undefined?0:nx))},nx===undefined?"重玩任務":"開始任務"));}
+ else if(pg==="task")v=h("div",{className:"pg"},h("div",{className:"en"},"Missions"),h("h2",null,"歷史闖關中心"),h(Prog),P.map(p=>h("div",{className:"card",key:p.id},h("h3",null,p.n),T[p.id].map((q,i)=>h("button",{key:i,className:"btn o",onClick:()=>nav(()=>{setPid(p.id);setTi(i)})},(done.includes(p.id+i)?"✔ ":"")+(q.photo?"📷 ":"")+"任務"+(P.indexOf(p)*4+i+1)+"　"+q.n)))));
+ else v=h("div",{className:"pg"},h("div",{className:"en"},"Passport"),h("h2",null,(user?user+" 的":"我的")+"集章冊"),h(Prog),h("div",{className:"grid"},P.map(p=>h("div",{key:p.id,className:"card",style:{textAlign:"center"}},h("div",{className:"stamp"+(cnt(p)===4?" on":"")},p.n),h("small",null,cnt(p)+"/4 任務"),ph[p.id+3]&&h("img",{src:ph[p.id+3],style:{width:"100%",marginTop:6}})))),
+  h("div",{className:"card",style:{textAlign:"center"}},done.length===16?h("div",{className:"ok"},"桃園眷村探索者"):h("small",null,"完成全部十六個任務，解鎖「桃園眷村探索者」")),
+  h("button",{className:"btn o",onClick:()=>{if(confirm("確定一鍵刪除所有進度與照片，重新體驗？")){setDone([]);setPh({});setName("");setUser("");setPg("home")}}},"一鍵刪除，重新體驗"));
+ const tab=ti!==null?"task":pg==="place"||pg==="hist"||pg==="detail"?"home":pg;
+ return h("div",{id:"app",},pg==="detail"&&ti===null&&h("div",{className:"rp"},h("div",{className:"bar"},h("i",{style:{width:rp+"%",transition:"none"}})),h("small",null,"閱覽進度 "+Math.round(rp)+"%")),user&&h("button",{className:"out",onClick:()=>{setUser("");setName("");setTi(null);setPg("home");scrollTo(0,0)}},"登出"),v,Ov,h("nav",null,[["home","首頁"],["map","地圖"],["task","任務"],["stamp","集章"],["credits","創作者"]].map(([k,l])=>h("button",{key:k,className:tab===k?"on":"",disabled:!user&&k!=="home",onClick:()=>go(k)},l))));}
+document.addEventListener("click",e=>{if(!e.target.closest("button,label"))return;const f=document.createElement("span");f.className="fl";f.textContent="✦";f.style.left=e.clientX-8+"px";f.style.top=e.clientY-8+"px";document.body.appendChild(f);setTimeout(()=>f.remove(),900)});
+ReactDOM.createRoot(document.getElementById("app")).render(h(App));
+</script></body></html>
